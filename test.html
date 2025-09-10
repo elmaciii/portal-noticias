@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 Test - Noticias en Vivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .news-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test de Noticias en Vivo</h1>
+    
+    <div class="test-section">
+        <h2>1. Test de Carga de Datos</h2>
+        <button class="test-button" onclick="testDataLoading()">Cargar Noticias</button>
+        <div id="dataResult" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Test de Renderizado</h2>
+        <button class="test-button" onclick="testRendering()">Renderizar Noticias</button>
+        <div id="renderResult" class="result" style="display: none;"></div>
+        <div id="newsPreview"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Test de Funciones</h2>
+        <button class="test-button" onclick="testFunctions()">Probar Funciones</button>
+        <div id="functionResult" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        // Datos de prueba
+        const testNews = [
+            {
+                title: "🚀 Test: Noticia de prueba 1",
+                description: "Esta es una noticia de prueba para verificar el funcionamiento del sistema.",
+                url: "https://example.com/test1",
+                image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=200&fit=crop",
+                publishedAt: new Date().toISOString(),
+                source: { name: "TestNews" }
+            },
+            {
+                title: "⚽ Test: Noticia de prueba 2",
+                description: "Segunda noticia de prueba para verificar el renderizado múltiple.",
+                url: "https://example.com/test2",
+                image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=200&fit=crop",
+                publishedAt: new Date(Date.now() - 300000).toISOString(),
+                source: { name: "TestSports" }
+            }
+        ];
+
+        function showResult(elementId, message, isSuccess = true) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.className = `result ${isSuccess ? 'success' : 'error'}`;
+            element.innerHTML = message;
+        }
+
+        async function testDataLoading() {
+            try {
+                // Intentar cargar data.json
+                const response = await fetch('./data.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    showResult('dataResult', `✅ Datos cargados correctamente: ${data.articles.length} noticias encontradas`, true);
+                } else {
+                    throw new Error('No se pudo cargar data.json');
+                }
+            } catch (error) {
+                showResult('dataResult', `❌ Error al cargar datos: ${error.message}`, false);
+            }
+        }
+
+        function testRendering() {
+            try {
+                const newsHTML = testNews.map(article => `
+                    <div class="news-item">
+                        <h3>${article.title}</h3>
+                        <p><strong>Fuente:</strong> ${article.source.name}</p>
+                        <p><strong>Fecha:</strong> ${new Date(article.publishedAt).toLocaleString('es-ES')}</p>
+                        <p>${article.description}</p>
+                        <a href="${article.url}" target="_blank">Leer más →</a>
+                    </div>
+                `).join('');
+                
+                document.getElementById('newsPreview').innerHTML = newsHTML;
+                showResult('renderResult', `✅ Renderizado exitoso: ${testNews.length} noticias mostradas`, true);
+            } catch (error) {
+                showResult('renderResult', `❌ Error en renderizado: ${error.message}`, false);
+            }
+        }
+
+        function testFunctions() {
+            try {
+                // Test de formateo de fecha
+                const testDate = new Date(Date.now() - 300000).toISOString();
+                const formatted = formatTestDate(testDate);
+                
+                // Test de elementos del DOM
+                const hasRequiredElements = document.querySelector('h1') !== null;
+                
+                showResult('functionResult', `
+                    ✅ Funciones básicas funcionando:<br>
+                    • Formateo de fecha: ${formatted}<br>
+                    • Elementos DOM: ${hasRequiredElements ? 'OK' : 'Error'}<br>
+                    • JavaScript: Funcionando correctamente
+                `, true);
+            } catch (error) {
+                showResult('functionResult', `❌ Error en funciones: ${error.message}`, false);
+            }
+        }
+
+        function formatTestDate(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const diffInMinutes = Math.floor((now - date) / (1000 * 60));
+            
+            if (diffInMinutes < 1) return 'Hace un momento';
+            if (diffInMinutes < 60) return `Hace ${diffInMinutes} min`;
+            return date.toLocaleString('es-ES');
+        }
+
+        // Auto-ejecutar tests al cargar
+        window.addEventListener('load', () => {
+            console.log('🧪 Página de test cargada');
+            setTimeout(() => {
+                testDataLoading();
+                testRendering();
+                testFunctions();
+            }, 500);
+        });
+    </script>
+</body>
+</html>

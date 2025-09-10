@@ -1,0 +1,55 @@
+ARCHIVOS PARA SUBIR A GITHUB
+============================
+
+ARCHIVOS PRINCIPALES (OBLIGATORIOS):
+- index.html          (Página principal)
+- admin.html          (Panel de administración)
+- styles.css          (Estilos principales)
+- app.js             (Lógica de la aplicación)
+- admin.js           (Lógica del admin)
+- backend.js         (Backend simulado)
+- config.js          (Configuración global)
+- data.json          (Datos de respaldo)
+- cms-news.json      (Noticias del CMS - se genera automáticamente)
+- manifest.json      (PWA manifest)
+- sw.js             (Service Worker)
+- README.md         (Documentación)
+- .gitignore        (Archivos a ignorar)
+
+CARPETA:
+- icons/            (Iconos PWA - subir carpeta completa)
+
+ARCHIVOS OPCIONALES:
+- INSTRUCCIONES-GITHUB.md  (Instrucciones detalladas)
+- logo.png          (Logo del sitio)
+
+ARCHIVOS QUE NO SUBIR:
+- admin-styles.css  (No se usa)
+- cms-styles.css    (No se usa)
+- cms.js           (No se usa)
+- test.html        (Archivo de prueba)
+- README-COMPLETO.md (Duplicado)
+- SOLUCION.md      (Archivo temporal)
+
+ORDEN DE SUBIDA RECOMENDADO:
+1. index.html
+2. admin.html
+3. styles.css
+4. app.js
+5. admin.js
+6. backend.js
+7. config.js
+8. data.json
+9. cms-news.json
+10. manifest.json
+11. sw.js
+12. README.md
+13. .gitignore
+14. icons/ (carpeta completa)
+15. INSTRUCCIONES-GITHUB.md (opcional)
+
+NOTAS IMPORTANTES:
+- Subir TODOS los archivos de la lista "OBLIGATORIOS"
+- La carpeta icons/ debe subirse completa
+- El archivo cms-news.json se actualiza automáticamente cuando sincronizas
+- Después de subir, activar GitHub Pages en Settings > Pages

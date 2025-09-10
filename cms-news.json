@@ -1,0 +1,30 @@
+{
+    "version": "1.0.0",
+    "name": "Noticias del CMS",
+    "description": "Archivo compartido de noticias del CMS",
+    "lastUpdate": "2025-01-09T00:00:00.000Z",
+    "articles": [
+        {
+            "id": "cms-1",
+            "title": "Noticia de Prueba del CMS",
+            "description": "Esta es una noticia de prueba cargada desde el CMS. Si ves esta noticia en tu celular, significa que la sincronización está funcionando correctamente.",
+            "url": "#",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzY0NzQ4YiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkVsb25jZTwvdGV4dD48L3N2Zz4=",
+            "source": "ELONCE",
+            "publishedAt": "2025-01-09T00:00:00.000Z",
+            "category": "general",
+            "status": "published"
+        },
+        {
+            "id": "cms-2",
+            "title": "Sistema de CMS Funcionando",
+            "description": "El sistema de gestión de contenido está funcionando perfectamente. Las noticias se sincronizan entre todos los dispositivos a través de GitHub.",
+            "url": "#",
+            "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzY0NzQ4YiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkVsb25jZTwvdGV4dD48L3N2Zz4=",
+            "source": "ELONCE",
+            "publishedAt": "2025-01-09T00:00:00.000Z",
+            "category": "tecnologia",
+            "status": "published"
+        }
+    ]
+}

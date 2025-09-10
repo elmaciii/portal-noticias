@@ -1,0 +1,108 @@
+{
+  "version": "2.0.0",
+  "name": "Portal de Noticias Profesional",
+  "description": "Datos de respaldo para el portal profesional de noticias",
+  "lastUpdate": "2025-01-09T14:37:17.000Z",
+  "articles": [
+    {
+      "title": "La Municipalidad intimó a empresas a retomar el servicio urbano de transporte en Paraná",
+      "description": "El intendente firmó una resolución que obliga a las empresas de transporte a normalizar el servicio en toda la ciudad. Los vecinos reclaman por la falta de colectivos en varios barrios.",
+      "url": "https://example.com/noticia-transporte-parana",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=400&fit=crop",
+      "publishedAt": "2024-01-15T10:30:00Z",
+      "source": {
+        "name": "ELONCE"
+      }
+    },
+    {
+      "title": "Se entregó el principal acusado del crimen en barrio Capibá de Paraná",
+      "description": "El hombre de 34 años se presentó en la comisaría acompañado de su abogado. Está acusado del homicidio ocurrido el fin de semana pasado en el barrio Capibá.",
+      "url": "https://example.com/noticia-crimen-capiba",
+      "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T09:15:00Z",
+      "source": {
+        "name": "ELONCE"
+      }
+    },
+    {
+      "title": "Quini 6: ganador entrerriano es \"un jubilado que repite la misma boleta hace años\"",
+      "description": "El afortunado ganador del pozo de $2.500 millones es un jubilado de 68 años de Concepción del Uruguay que juega los mismos números desde hace más de 10 años.",
+      "url": "https://example.com/noticia-quini6-ganador",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T08:45:00Z",
+      "source": {
+        "name": "ELONCE"
+      }
+    },
+    {
+      "title": "Argentina visita a Ecuador con un equipo distinto y sin Messi: posible formación",
+      "description": "La Selección argentina enfrentará a Ecuador en Quito sin Lionel Messi, quien se quedó en Buenos Aires por molestias físicas. Scaloni probará variantes en el equipo.",
+      "url": "https://example.com/noticia-argentina-ecuador",
+      "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T07:20:00Z",
+      "source": {
+        "name": "ELONCE"
+      }
+    },
+    {
+      "title": "El dólar oficial vuelve a subir y se mantiene por encima de los $1.400",
+      "description": "El Banco Central informó que el dólar oficial cerró la jornada en $1.405, con una suba del 0.8%. Los analistas prevén más volatilidad en los próximos días.",
+      "url": "https://example.com/noticia-dolar-oficial",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T06:30:00Z",
+      "source": {
+        "name": "ELONCE"
+      }
+    },
+    {
+      "title": "Salud: Descubrimiento prometedor en tratamiento del cáncer",
+      "description": "Investigadores locales han desarrollado una nueva terapia que muestra resultados alentadores en el tratamiento de ciertos tipos de cáncer.",
+      "url": "https://example.com/noticia-salud-cancer",
+      "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T05:15:00Z",
+      "source": {
+        "name": "Salud Hoy"
+      }
+    },
+    {
+      "title": "Internacional: Cumbre mundial aborda crisis climática",
+      "description": "Líderes mundiales se reúnen para discutir estrategias conjuntas contra el cambio climático en la cumbre anual.",
+      "url": "https://example.com/noticia-internacional-cumbre",
+      "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T04:00:00Z",
+      "source": {
+        "name": "Mundo Global"
+      }
+    },
+    {
+      "title": "Educación: Programa de becas beneficia a 10,000 estudiantes",
+      "description": "El nuevo programa de becas gubernamentales permitirá que miles de estudiantes accedan a educación superior gratuita.",
+      "url": "https://example.com/noticia-educacion-becas",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T03:30:00Z",
+      "source": {
+        "name": "Educación Futuro"
+      }
+    },
+    {
+      "title": "Innovación: Startup local recibe inversión millonaria",
+      "description": "Una startup de tecnología local ha recibido una inversión de $5 millones para expandir sus operaciones internacionalmente.",
+      "url": "https://example.com/noticia-innovacion-startup",
+      "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T02:45:00Z",
+      "source": {
+        "name": "Innovación Tech"
+      }
+    },
+    {
+      "title": "Sociedad: Campaña solidaria supera expectativas",
+      "description": "La campaña de ayuda solidaria ha recaudado más del doble de lo esperado, beneficiando a miles de familias necesitadas.",
+      "url": "https://example.com/noticia-sociedad-solidaridad",
+      "image": "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=200&fit=crop",
+      "publishedAt": "2024-01-15T01:20:00Z",
+      "source": {
+        "name": "Sociedad Solidaria"
+      }
+    }
+  ]
+}
